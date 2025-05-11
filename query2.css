@@ -241,7 +241,13 @@ p{
         width:80px;
         height:30px;
     }
+    .description{
+        display: block;
+    }
+
+   
 }
+
 
 
 
