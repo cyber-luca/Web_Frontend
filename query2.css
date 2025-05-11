@@ -1,6 +1,8 @@
 body{
     background-color: bisque;
+    height: 100%;
 }
+
 .padre{
     display: flex;
     flex-direction: column;
@@ -11,30 +13,15 @@ body{
     align-items: center;
     gap:50px;
 }
+
 .d1{
     display: flex;
     width:300px;
     height:300px;
     border-style: solid;
     border-color: black;
-    background-image: url(Pizza1.jpeg);github
 }
-.d2{
-    display: flex;
-    width:300px;
-    height:300px;
-    border-style: solid;
-    border-color: black;
-    background-image: url(Pizza2.jpeg); 
-}
-.d3{
-    display: flex;
-    width:300px;
-    height:300px;
-    border-style: solid;
-    border-color: black;
-    background-image: url(Pizza3.jpeg);
-}
+
 .pizza{
     background-color: rgb(219, 216, 31);
     width:300px;
@@ -43,6 +30,7 @@ body{
     display: flex;
     justify-content: center;
 }
+
 .pomodoro{
     background-color: red;
     width:250px;
@@ -62,14 +50,16 @@ body{
         justify-self: center;
         align-items: center;
         gap:50px;
-        margin-top:10%;
+        margin-top:5%;
     }
     .d1{
         display: flex;
         width:300px;
         height:300px;
-        border-style: solid;
+        border-style:solid;
         border-color: black;
+        border-radius: 12px;
+      
     }
 }
     
@@ -78,26 +68,97 @@ header{
     margin-top:80px;
     font-size: 28px;
 }
+
 .menu{
     width:400px;
     height: 50px;
     font-size:30px;
-  
+    border-radius: 12px;
+    background-color:rgb(246, 215, 174);
+    border-color:sienna;
+    border-style:solid;
+    
 }
+
+.menu:hover{
+    background-color:sienna;
+    border-color:rgb(246, 215, 174);
+    cursor: pointer;
+    color:rgb(246, 215, 174);
+    border-width: 5px;
+}
+
 #list0{
     width:500px;
-    height:700px;
+    height:500px;
     display: none;
-    background-color: orange;
+    background-color: bisque;
     font-size: 40px;
     text-align: center;
     justify-self: center;
     line-height:70px;
+    border-radius: 12px;
+    border-color: sienna;
+    border-style:dashed;
 }
+
 #list0.visible{
     display:block;
 }
+
 article{
     justify-self: center;
     justify-items: center;
+    background-color: bisque;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top:-40px;
+
 }
+
+img{
+    display: block;
+    width: 300px;
+    height: 300px;
+    border-radius: 12px;
+}
+
+.da_michele{
+    width:500px;
+    height: 300px;
+    justify-self: center;
+}
+
+header{
+   background-color: sienna;
+   position: relative;
+}
+
+.font{
+    color:white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1{
+    border-color:black;
+    
+}
+
+h2{
+    font-size: 40px;
+    justify-self: center;
+}
+
+p{
+    font-size: 25px;
+    justify-self: center;
+    line-height: 40px;
+    font-family: Calibri;
+}
+
+.decorazione{
+    width:80px;
+    height:30px;
+}
+
