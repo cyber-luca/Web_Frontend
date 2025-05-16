@@ -1,0 +1,468 @@
+body{
+    background-color: bisque;
+    height: 100%;
+}
+
+.padre{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    height:50%;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    gap:50px;
+}
+
+.d1{
+    display: flex;
+    width:300px;
+    height:300px;
+    border-style: solid;
+    border-color: black;
+}
+
+header{
+    background-color: sienna;
+    position: relative;
+    top: -30px; /* meno negativo per avvicinarlo al contenuto */
+    text-align: center;
+    margin-top: 32px;
+    padding: 56px 0 40px 0; /* più spazio sopra e sotto */
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.20);
+    border-bottom: 10px solid #f6d7ae; /* bordo più spesso */
+}
+
+.font{
+    color: #fff;
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-size: 2.5rem; /* leggermente più piccolo su mobile */
+    letter-spacing: 2.5px;
+    text-shadow: 2px 2px 12px #a0522d80;
+    margin: 0;
+    padding: 0 10px;
+    line-height: 1.15;
+}
+
+.menu{
+    width:400px;
+    height: 50px;
+    font-size:30px;
+    border-radius: 12px;
+    background-color:rgb(246, 215, 174);
+    border-color:sienna;
+    border-style:solid;
+}
+
+.menu:hover{
+    background-color:sienna;
+    border-color:rgb(246, 215, 174);
+    cursor: pointer;
+    color:rgb(246, 215, 174);
+    border-width: 5px;
+}
+
+#list0{
+    width:400px;
+    height:500px;
+    display: none;
+    background-color: bisque;
+    font-size: 40px;
+    text-align: center;
+    justify-self: center;
+    line-height:70px;
+    border-radius: 12px;
+    border-color: sienna;
+    border-style:dashed;
+}
+
+#list0.visible{
+    display:block;
+}
+
+article{
+    justify-self: center;
+    justify-items: center;
+    background-color: bisque;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top:-60px;
+    margin-bottom: 60px; /* più spazio sotto per il footer */
+}
+
+img{
+    display: block;
+    width: 300px;
+    height: 300px;
+    border-radius: 12px;
+}
+
+.da_michele{
+    width:500px;
+    height: 300px;
+    justify-self: center;
+}
+
+h1{
+    border-color:black;
+}
+
+p{
+    font-size: 25px;
+    justify-self: center;
+    line-height: 40px;
+    font-family: Calibri;
+}
+.decorazione{
+    width:80px;
+    height:30px;
+}
+
+.description{
+    display: none;
+}
+
+#pulsanteChiSiamo {
+    width:400px;
+    height: 50px;
+    font-size:30px;
+    border-radius: 12px;
+    background-color:rgb(246, 215, 174);
+    border-color:sienna;
+    border-style:solid;
+}
+
+#pulsanteChiSiamo:hover{
+    background-color:sienna;
+    border-color:rgb(246, 215, 174);
+    cursor: pointer;
+    color:rgb(246, 215, 174);
+    border-width: 5px;
+}
+
+#descrizione {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    
+}
+@media(min-width:1080px){
+    .bg_mobile{
+        display: none;
+    }
+    .padre{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height:50%;
+        justify-content: center;
+        justify-self: center;
+        align-items: center;
+        gap:50px;
+        margin-top:2%;
+    }
+
+    .d1{
+        display: flex;
+        width:300px;
+        height:300px;
+        border-style:solid;
+        border-color: black;
+        border-radius: 12px;
+    }
+      
+    header {
+        background-color: sienna;
+        text-align: center;
+        margin-top: 80px;
+        padding: 80px 0 56px 0;
+        border-radius: 0 0 64px 64px;
+        box-shadow: 0 12px 48px 0 rgba(0,0,0,0.22);
+        border-bottom: 14px solid #ffe4c4;
+        position: relative;
+    }
+
+    .font {
+        color: #fff;
+        font-family: 'Playfair Display', 'Georgia', serif;
+        font-size: 4rem;
+        letter-spacing: 3px;
+        text-shadow: 2px 2px 18px #a0522d90;
+        margin: 0;
+        padding: 0 40px;
+        line-height: 1.1;
+    }
+
+    .menu{
+        width:400px;
+        height: 50px;
+        font-size:30px;
+        border-radius: 12px;
+        background-color:rgb(246, 215, 174);
+        border-color:sienna;
+        border-style:solid;
+    }
+
+    .menu:hover{
+        background-color:sienna;
+        border-color:rgb(246, 215, 174);
+        cursor: pointer;
+        color:rgb(246, 215, 174);
+        border-width: 5px;
+    }
+
+    #list0{
+        width:500px;
+        height:500px;
+        display: none;
+        background-color: bisque;
+        font-size: 40px;
+        text-align: center;
+        justify-self: center;
+        line-height:70px;
+        border-radius: 12px;
+        border-color: sienna;
+        border-style:dashed;
+    }
+    
+    #list0.visible{
+        display:block;
+    }
+
+    article{
+        justify-self: center;
+        justify-items: center;
+        background-color: bisque;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top:-90px;
+
+    }
+    
+    img{
+        display: block;
+        width: 300px;
+        height: 300px;
+        border-radius: 12px;
+    }
+
+    .da_michele{
+        width:500px;
+        height: 300px;
+        justify-self: center;
+    }
+
+    h1{
+        border-color:black;
+    }
+
+    h2{
+        font-size: 40px;
+        justify-self: center;
+        display: block;
+    }
+
+    p{
+        font-size: 25px;
+        justify-self: center;
+        line-height: 40px;
+        font-family: Calibri;
+    }
+    .decorazione{
+        width:80px;
+        height:30px;
+        
+    }
+    .description{
+        display: block;
+    }
+
+   
+}
+
+@media (min-width: 688px) and (max-width: 1079px) {
+    .bg_mobile {
+        display: none;
+    }
+    .padre {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 28px;
+        margin-top: 24px;
+        width: 100%;
+    }
+    .d1 {
+        width: 200px;
+        height: 200px;
+        border-radius: 12px;
+    }
+    .d1 img {
+        width: 200px;
+        height: 200px;
+        border-radius: 12px;
+    }
+    header {
+        margin-top: 40px;
+        padding: 56px 0 36px 0;
+        box-shadow: 0 8px 32px 0 rgba(0,0,0,0.18);
+        border-bottom: 10px solid #ffe4c4;
+    }
+    .font {
+        font-size: 2.7rem;
+        padding: 0 18px;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+    .menu, #pulsanteChiSiamo {
+        width: 320px;
+        height: 50px;
+        font-size: 26px;
+        border-radius: 12px;
+        margin: 18px auto 10px auto;
+        display: block;
+        box-sizing: border-box;
+    }
+    .decorazione {
+        width: 80px;
+        height: 30px;
+        position: relative;
+        top:-30px;        
+    }
+    #list0 {
+        width: 320px;
+        min-height: 60px;
+        font-size: 28px;
+        line-height: 48px;
+        border-radius: 12px;
+        margin: 0 auto 18px auto;
+        word-break: break-word;
+        overflow-wrap: break-word;
+        padding: 12px 8px;
+        box-sizing: border-box;
+        text-align: center;
+        position: relative;
+        top:-30px;
+    }
+    article {
+        top: -40px;
+        margin-bottom: 36px;
+    }
+    .footer {
+        padding: 32px 0 12px 0;
+        margin-top: 40px;
+        border-radius: 16px 16px 0 0;
+    }
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: 24px;
+    }
+    .footer-info h3 {
+        font-size: 22px;
+    }
+    .footer-info p, .footer-info a {
+        font-size: 15px;
+    }
+    .footer-social h4 {
+        font-size: 16px;
+    }
+    .social-icon {
+        font-size: 22px;
+    }
+    .footer-copy {
+        font-size: 13px;
+        margin-top: 12px;
+    }
+}
+
+.footer {
+    background: sienna;
+    color: white;
+    padding: 40px 0 18px 0; /* più spazio sopra */
+    text-align: center;
+    font-family: 'Calibri', sans-serif;
+    margin-top: 70px; /* alza il footer */
+    border-radius: 12px 12px 0 0; /* curvo solo in alto */
+    box-shadow: 0 -4px 24px 0 rgba(0,0,0,0.10); /* ombra leggera sopra */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.footer-info h3 {
+    margin-bottom: 10px;
+    font-family: Cambria, serif;
+    font-size: 28px;
+}
+
+.footer-info p, .footer-info a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.footer-social {
+    margin-top: 10px;
+}
+
+.footer-social h4 {
+    margin-bottom: 8px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.social-icon {
+    color: white;
+    font-size: 28px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: rgb(246, 215, 174);
+}
+
+.footer-copy {
+    margin-top: 20px;
+    font-size: 15px;
+    color: #f6d7ae;
+}
+
+@media (min-width: 800px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .footer-info, .footer-social {
+        text-align: left;
+    }
+    header {
+        padding: 64px 0 48px 0;
+        margin-top: 60px;
+    }
+    .font {
+        font-size: 3.5rem;
+        padding: 0 30px;
+    }
+    .footer {
+        margin-top: 100px;
+        padding: 50px 0 20px 0;
+    }
+}
+
+/* Google Fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+
+
+
