@@ -38,10 +38,13 @@ function populateMenu() {
     });
 }
 
-// Gestione del click sul bottone
+// Gestione del click sul bottone Menu
 menuButton.addEventListener('click', () => {
     list0.classList.toggle('visible'); // Mostra/nasconde il menu
     if (list0.classList.contains('visible')) {
         populateMenu(); // Popola il menu se visibile
+        menuButton.textContent = 'Menu Pizze ˅'; // Freccia verso il basso
+    } else {
+        menuButton.textContent = 'Menu Pizze >'; // Freccia verso destra
     }
 });
