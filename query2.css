@@ -131,6 +131,7 @@ p{
     background-color:rgb(246, 215, 174);
     border-color:sienna;
     border-style:solid;
+    trasform: display 1s ease;
 }
 
 #pulsanteChiSiamo:hover{
